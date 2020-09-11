@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/window-background.jpg") center top fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: black 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.bot-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+.h1-bot {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  position: relative;
+  background: rgba(71, 55, 39, 0.7);
+  border-radius: 0.4em;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.h1-bot:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: rgba(71, 55, 39, 0.7);
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
+.pizza-bot-image {
+  width: 150px;
+}
+
+.greeting-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.greeting-message-container {
+  background: rgba(211, 117, 6, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#greeting-message,
+#quantity-of-pizza,
+#name-of-pizza {
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#form-text {
+  padding: 5px;
+  margin: 10px;
+}
+
+#errorMessage {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+.quantity-of-pizza-wrapper {
+  background: rgba(211, 117, 6, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.final-message-wrapper {
+  display: none;
+}
+
+.final-message-wrapper-active {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  position: relative;
+  background: rgba(71, 55, 39, 0.7);
+  border-radius: 0.4em;
+  color: white;
+  text-align: center;
+}
+
+.final-message-wrapper-active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 27px solid transparent;
+  border-top-color: rgba(71, 55, 39, 0.7);
+  border-bottom: 0;
+  margin-left: -13.5px;
+  margin-bottom: -27px;
+}
+
+#final-message {
+  padding: 5px;
+  margin: 10px;
+}
+
+.quantity-of-pizza-wrapper {
+  display: none;
+}
+
+.quantity-of-pizza-wrapper-active {
+  display: flex;
+}
+
+.pizza-choice-wrapper {
+  display: none;
+}
+
+.greeting-wrapper-inactive {
+  display: none;
+}
+
+#button {
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+#button-1 {
+  margin: 15px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.img-pepperoni {
+  content: url("./images/pepperoni.jpg");
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.img-veg {
+  content: url("./images/vegetarian.jpg");
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.img-hawaii {
+  content: url("./images/hawaii.jpg");
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.pizza-bot-image-end {
+  content: url("./images/pizzabot.png");
+  width: 150px;
+  align-items: center;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5em;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  background: rgba(71, 55, 39, 0.7);
+  width: 100%;
+  bottom: 0;
+}
+
+/***** MEDIA QUERIES ****/
+
+/***** TABLET ****/
+@media (min-width: 768px) {
+  footer {
+    position: absolute;
+  }
+
+  .final-message-wrapper-active {
+    width: 50%;
+  }
+
+  .img-pepperoni {
+    width: 250px;
+  }
+
+  .img-veg {
+    width: 250px;
+  }
+
+  .img-hawaii {
+    width: 250px;
+  }
+}
+
+/***** DESKTOP ****/
+@media (min-width: 1024px) {
+  .final-message-wrapper-active {
+    width: 50%;
+  }
+}
