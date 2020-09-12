@@ -1,13 +1,28 @@
-# Pizza Bot
+# The  Pizza bot!
 
-Replace this readme with your own information about your project. 
+### This project was made as part of Technigo’s front-end developer boot camp Fall 2020.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this project, I have created a responsive one-page pizza bot using JavaScript, HTML and CSS.
 
-## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+##  The process and structure
+
+The pizza bot handles user information from a form and with the connection to JavaScript, it shows visual feedback in the HTML. 
+Some parts of the form are hidden when opening the initial page and is showed when submitting information to the form. 
+To accomplish this, several functions and conditionals were defined. 
+
+
+If I have had more time I would have
+* Made the pizza name input less case sensitive
+* Added more pizzas to the menu 
+* Made the footer work more smoothly 
+
 
 ## View it live
+The site is deployed <a href="https://festive-wozniak-b3dfae.netlify.app">here.</a>
+Check it out and order a pizza!
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+### Author and contact
+
+My name: Johanna Blom,   
+My <a href="https://www.linkedin.com/in/johanna-blom-2419a181/">Linkedin</a>

@@ -15,7 +15,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
 
+p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .bot-wrapper {
@@ -103,6 +106,12 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin: 10px;
+}
+
+.p-pick-up{
+  padding: 5px;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .final-message-wrapper {
@@ -228,12 +237,5 @@ footer {
 
   .img-hawaii {
     width: 250px;
-  }
-}
-
-/***** DESKTOP ****/
-@media (min-width: 1024px) {
-  .final-message-wrapper-active {
-    width: 50%;
   }
 }
